@@ -62,6 +62,10 @@ ul{
   margin-bottom:6%;
 }
 
+#minilogo{
+  display: none;
+}
+
 .navimg{
   width:13%;
   vertical-align: middle;
@@ -176,7 +180,7 @@ input{
   border-radius: 50px;
   padding: 0.9% 2.5%;
   margin-top: 20px;
-  margin-left: 70%;
+  margin-left: 65%;
 }
 
 
@@ -325,7 +329,7 @@ footer{
 }
 
 .scriptli{
-  padding-right: 15%;
+  padding-right: 12%;
 }
 
 .scriptli>h6:hover{
@@ -399,4 +403,161 @@ footer{
 #linea{
   width:130px;
   margin:3% 2% 0 2%;
+}
+
+
+
+@media all and (max-width: 767px){
+  .verticalnav{
+    width:50px;
+    min-height: calc(100vh - 90px);
+  }
+
+  #logo{
+    display: none;
+  }
+
+  .navimg{
+    width:80%;
+  }
+
+  .xs, .playlist, .nomeplaylist {
+    display:none;
+  }
+
+  #minilogo{
+    display: block;
+    font-size: 30px;
+  }
+
+  /* main section */
+
+  .mainsection{
+    width: calc(100% - 50px);
+    background-color: #141922;
+    margin-left: 50px;
+    margin-bottom: 80px;
+  }
+
+  input{
+    margin-left: 50%;
+  }
+
+  /* lista in evidenza */
+  .list> ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 110px;
+  }
+
+  .list> ul li{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 4% 4%;
+    font-size: 13px;
+  }
+
+  /* mainsection */
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  .flex>li{
+    margin-right: 2%;
+    width: calc((100% -2%)/3);
+  }
+
+
+  h2, p{
+    margin:0 0 1% 15%;
+  }
+
+  .script{
+    margin-bottom: 4%;
+  }
+
+  /* footer */
+
+  #line{
+    width: 180px;
+  }
+
+  #linea{
+    width: 90px;
+  }
+
+  .leftplayer, .rightplayer{
+    margin-top: 10%;
+  }
+
+  .player{
+    padding: 2% 0;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+  .verticalnav{
+    width:230px;
+    height: calc(100vh - 90px);
+  }
+
+  input{
+    margin-left: 40%;
+  }
+
+  .list> ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 110px;
+  }
+
+  .list> ul li{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 4% 6%;
+    font-size: 13px;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 4%;
+  }
+
+  .flex>li{
+    margin-right: 2%;
+    width: calc((100% -2%)/5);
+  }
+
+  p{
+    margin-bottom: 4%;
+  }
+
+  #line{
+    width: 300px;
+    margin: 0 2%;
+  }
+
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media all and (min-width: 1200px){
+
 }
