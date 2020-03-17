@@ -87,6 +87,11 @@ ul{
 
 /* playlist */
 
+.overflow{
+  overflow-y: scroll;
+  height: calc(100vh - 400px);
+}
+
 .playlist>h4{
   font-size: 14px;
 }
@@ -123,7 +128,7 @@ ul{
 /* download */
 
 .download{
-  padding-top: 10%;
+  margin-top: 20%;
   border-bottom: 1px solid #fff;
 }
 
@@ -441,6 +446,10 @@ footer{
     display:none;
   }
 
+  .overflow{
+    overflow-y: hidden;
+  }
+
   .download{
     border-bottom: none;
   }
@@ -543,8 +552,13 @@ footer{
     height: calc(100vh - 200px);
   }
 
+  /* .nomeplaylist>ul{
+    overflow-y: scroll;
+    height:250px;
+  } */
+
   .download{
-    padding-top: 6%;
+    margin-top: 20%;
   }
 
   input{
